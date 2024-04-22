@@ -2,37 +2,37 @@
 #include "ItemToPurchase.h"
 using namespace std;
 
-ItemsToPurchase::ItemsToPurchase() : itemName("none"), itemPrice(0), itemQuantity(0) {
+ItemToPurchase::ItemToPurchase() : itemName("none"), itemPrice(0), itemQuantity(0) {
 }
 
-ItemsToPurchase::ItemsToPurchase(const string& itemName, int itemPrice, int itemQuantity)
+ItemToPurchase::ItemToPurchase(const string& itemName, int itemPrice, int itemQuantity)
     : itemName(itemName), itemPrice(itemPrice), itemQuantity(itemQuantity) {
 
-ItemsToPurchase::ItemsToPurchase(string itemName, int itemPrice, int itemQuantity) {
+ItemToPurchase::ItemToPurchase(string itemName, int itemPrice, int itemQuantity) {
     this->itemName = itemName;
     this->itemPrice = itemPrice;
     this->itemQuantity = itemQuantity;
 
-void ItemsToPurchase::SetName(string& name) {
+void ItemToPurchase::SetName(string& name) {
   itemName = name;
 }
 
-string ItemsToPurchase::GetName() {
+string ItemToPurchase::GetName() {
   return itemName;
 }
 
-void ItemsToPurchase::SetPrice(int price) {
+void ItemToPurchase::SetPrice(int price) {
   itemPrice = price;
 }
 
-int ItemsToPurchase::GetPrice() {
+int ItemToPurchase::GetPrice() {
   return itemPrice;
 }
 
-void ItemsToPurchase::SetQuantity(int quantity) {
+void ItemToPurchase::SetQuantity(int quantity) {
   itemQuantity = quantity;
 }
 
-int ItemsToPurchase::GetQuantity() {
+int ItemToPurchase::GetQuantity() {
   return itemQuantity;
 }

@@ -2,6 +2,11 @@
 #include "ItemToPurchase.h"
 using namespace std;
 
+ItemsToPurchase::ItemsToPurchase(string itemName, int itemPrice, int itemQuantity) {
+    this->itemName = itemName;
+    this->itemPrice = itemPrice;
+    this->itemQuantity = itemQuantity;
+
 void ItemsToPurchase::SetName(string& name) {
   itemName = name;
 }
